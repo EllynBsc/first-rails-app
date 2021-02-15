@@ -1,1 +1,20 @@
 <h1>We are in the contact page</h1>
+
+<%# batch549 = ['daan', 'ludmila', 'antony', 'corey'] %>
+<!--            0        1            2       3 -->
+
+<ol>
+<% @batch549.each do |student| %>
+  <li><%= student.capitalize %></li>
+<% end %>
+</ol>
+
+
+<!-- action="/path" is where you're sending the request to. -->
+<form action="/contact" method="get">
+  <!-- name = "key_name" of your params hash-->
+  <input type="text" name="student" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+<%= @user_info %>

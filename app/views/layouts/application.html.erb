@@ -10,6 +10,12 @@
   </head>
 
   <body>
+    <h1>This my navbar</h1>
     <%= yield %>
+    <!-- injecting the view page corresponding to the request. in our case if we query localhost:3000/about, it will inject about.html.erb in here. -->
+    <p>This is my footer </p>
   </body>
 </html>
+
+<!-- rendering this file -->
+<!-- injecting the view corresponding to the request thanks to yield. -->

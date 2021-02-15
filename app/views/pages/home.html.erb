@@ -1,1 +1,26 @@
 <h1>We are in the home page</h1>
+
+<!-- pe + tab (interepting ruby and injecting it in the view) -->
+<%= Date.today %>
+
+<!-- er + tab injecting ruby without displaying it. -->
+<% time = Date.today %>
+
+<h2>Today we are <%= time %></h2>
+
+<!-- erb stands for embedded ruby -->
+
+
+<!-- BUILDING LINKS -->
+<!-- lt + tab ( to generate a link) -->
+<!-- generic syntax -->
+<%#= link_to 'text to your user', prefix_path_to_build_the_url  %>
+
+<!-- button to go to the contact page -->
+<%= link_to 'contact us', contact_path %>
+
+<!-- this is the html generated -->
+<!-- <a href="/contact">contact us</a> -->
+
+<%= link_to 'about page', about_path %>
+
